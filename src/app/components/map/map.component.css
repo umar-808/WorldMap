@@ -1,0 +1,60 @@
+.map-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.world-map {
+  width: 70%;
+  height: 600px;
+  margin-left: 20px;
+  object-fit: contain;
+}
+
+.info-box {
+  width: 25%;
+  padding: 10px;
+  background-color: lightyellow;
+  border-radius: 10px;
+  margin-right: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+
+.heading {
+  color: #d32f2f;
+}
+
+.red {
+  color: #d32f2f;
+}
+
+.default-info ul {
+  list-style-type: disc;
+}
+
+.click-link {
+  color: #1a4971;
+}
+
+.country-info ul {
+  list-style-type: disc;
+}
+
+.country-info li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.heading {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #8B0000;
+}
+
+.red {
+  font-size: 1.25rem;
+}

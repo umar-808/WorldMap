@@ -1,0 +1,28 @@
+<div class="map-container">
+  <object
+    data="assets/world-map.svg"
+    type="image/svg+xml"
+    class="world-map"
+    (load)="onSvgLoaded($event)"
+  ></object>
+
+  <div class="info-box">
+    <div *ngIf="!selectedCountry" class="default-info">
+      <h2 class="heading">Country Data</h2>
+      <ul>
+        <li class="click-link">Click the area on map to select a country.</li>
+      </ul>
+    </div>
+
+    <div *ngIf="selectedCountry" class="country-info">
+      <h2 class="heading">{{ selectedCountry.name }}</h2>
+      <ul>
+        <li class="click-link"><strong>Capital:</strong> {{ selectedCountry.capital }}</li>
+        <li class="click-link"><strong>Region:</strong> {{ selectedCountry.region }}</li>
+        <li class="click-link"><strong>Income Level:</strong> {{ selectedCountry.incomeLevel }}</li>
+        <li class="click-link"><strong>Longitude:</strong> {{ selectedCountry.longitude }}</li>
+        <li class="click-link"><strong>Latitude:</strong> {{ selectedCountry.latitude }}</li>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="top-bar">
+    <div class="title">D280 Performance Assessment</div>
+    <div class="menu">
+      <a href="#">Home</a>
+    </div>
+    <div class="search-container">
+      <input
+        [(ngModel)]="searchQuery"
+        (input)="filterCountries()"
+        type="text"
+        placeholder="Search a country"
+      />
+      <button (click)="searchCountry()">Search</button>
+  
+      <div *ngIf="filteredCountries.length > 0" class="dropdown">
+        <ul>
+          <li *ngFor="let country of filteredCountries" (click)="selectCountry(country)">
+            {{ country }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+  

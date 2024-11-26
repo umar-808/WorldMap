@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+/* styles.css */
+
+/* Reset margin and padding if not done already */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set the global font */
+  body {
+    font-family: 'Roboto', sans-serif; /* Use fallback sans-serif */
+  }
+  
+  /* Optional: Set font for other elements */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; /* Bold for headings */
+  }
+  
+  button, input, select {
+    font-family: 'Roboto', sans-serif;
+  }
+  
